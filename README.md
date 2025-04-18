@@ -78,5 +78,6 @@ Example exported JSON:
   "ClientSecret": "Encrypted",
   "BaseURL": "eu.ninjarmm.com"
 }
+```
 
 Credits to AIVenom with his original script: https://github.com/antivenom8/aivenom/blob/main/NinjaOne/NinjaOneVulnerabilityImport.ps1
