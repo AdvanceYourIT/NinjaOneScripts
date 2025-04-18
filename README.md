@@ -1,0 +1,2 @@
+# NinjaOneScripts
+Scripts for NinjaOne
