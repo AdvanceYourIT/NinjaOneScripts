@@ -53,6 +53,7 @@ Run the script with `-UploadOnly` and required parameters:
     -BaseURL "eu.ninjarmm.com" `
     -ScanGroupID 1234 `
     -UploadOnly
+```
 
 ## 🔒 Security
 
