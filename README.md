@@ -53,3 +53,29 @@ Run the script with `-UploadOnly` and required parameters:
     -BaseURL "eu.ninjarmm.com" `
     -ScanGroupID 1234 `
     -UploadOnly
+
+## 🔒 Security
+
+- API credentials are encrypted using [DPAPI](https://learn.microsoft.com/en-us/windows/win32/secauthn/data-protection) and stored per-user/machine in exported filter JSON files.
+- Log files are written to:  
+  `%APPDATA%\NinjaOneVulnerabilityImporter\log.txt`
+
+---
+
+## 📂 Filter Configuration
+
+You can import/export settings (filters, columns, API settings) via the GUI.
+
+Example exported JSON:
+```json
+{
+  "filters": ["test", "unmanaged"],
+  "autoExport": true,
+  "ScanSource": "Qualys",
+  "SelectedColumns": ["deviceName", "cvssScore", "vulnerabilitySeverityLevel"],
+  "ClientID": "Encrypted",
+  "ClientSecret": "Encrypted",
+  "BaseURL": "eu.ninjarmm.com"
+}
+
+Credits to AIVenom with his original script: https://github.com/antivenom8/aivenom/blob/main/NinjaOne/NinjaOneVulnerabilityImport.ps1
