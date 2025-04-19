@@ -3,7 +3,6 @@
 A Windows PowerShell-based GUI and CLI tool for filtering and uploading vulnerability scan data to NinjaOne via API.
 
 ![vulnerability-management](https://github.com/user-attachments/assets/fdceeba9-0e99-4237-8125-a0fb5447a03c)
-
 ![filter options](https://github.com/user-attachments/assets/84321b97-1617-42dd-b1e7-beda6eab1892)
 
 ## ✨ Features
@@ -24,6 +23,16 @@ A Windows PowerShell-based GUI and CLI tool for filtering and uploading vulnerab
 - **PowerShell 5.1 or later**
 - **Windows only** (WPF and DPAPI required)
 - NinjaOne API access (Client ID, Secret, Base URL)
+
+## 🔑 Required NinjaOne API Scope
+
+Make sure your API client has the following scope configured:
+
+```
+monitoring management offline_access
+```
+
+This is required to authenticate, fetch scan groups, and upload CSV files.
 
 ---
 
@@ -55,6 +64,8 @@ Run the script with `-UploadOnly` and required parameters:
     -UploadOnly
 ```
 
+---
+
 ## 🔒 Security
 
 - API credentials are encrypted using [DPAPI](https://learn.microsoft.com/en-us/windows/win32/secauthn/data-protection) and stored per-user/machine in exported filter JSON files.
@@ -80,4 +91,9 @@ Example exported JSON:
 }
 ```
 
-Credits to AIVenom with his original script: https://github.com/antivenom8/aivenom/blob/main/NinjaOne/NinjaOneVulnerabilityImport.ps1
+---
+
+## 🙏 Credits
+
+Based on the original concept by [AIVenom](https://github.com/antivenom8/aivenom/blob/main/NinjaOne/NinjaOneVulnerabilityImport.ps1)
+
