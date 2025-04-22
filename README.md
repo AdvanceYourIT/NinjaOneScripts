@@ -31,6 +31,9 @@ Make sure your API client has the following scope configured:
 ```
 monitoring management offline_access
 ```
+See the screenshot on how to properly set up your API Client App ID's in NinjaOne
+![2025-04-22 12_19_54-New Client App _ NinjaOne — Mozilla Firefox](https://github.com/user-attachments/assets/53fe9330-156b-46f1-858a-5c01dc0ba8da)
+
 
 This is required to authenticate, fetch scan groups, and upload CSV files.
 
