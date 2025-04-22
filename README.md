@@ -1,6 +1,6 @@
 # NinjaOne Vulnerability Importer
 
-Still looking for CSV Samples, just a header and 1 line of data, from the following Scan Sources: ConnectsSecure, Crowdstrike Spotlight, Qualys, Rapid7 and Tenable.
+Still looking for CSV Samples, just a header and 1 line of data, from the following Scan Sources: ConnectSecure, Crowdstrike Spotlight, Qualys, Rapid7 and Tenable.
 
 This is to preconfigure colums so the uploads will be even faster.
 
